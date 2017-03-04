@@ -176,5 +176,17 @@ class ViewController: UIViewController, LongPressRecordButtonDelegate {
             print("Audio file is not found")
         }
     }
+    
+    override var shouldAutorotate: Bool {
+        return false
+    }
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.portrait
+    }
+    
+    override var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation {
+        return UIInterfaceOrientation.portrait
+    }
 }
 
